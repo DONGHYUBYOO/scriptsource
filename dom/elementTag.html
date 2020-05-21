@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>List item1</li>
+      <li>List item2</li>
+      <li>List item3</li>
+      <li>List item4</li>
+      <li>List item5</li>
+    </ul>
+    <script>
+      //대그 이름으로 찾기
+      let ul = document.getElementsByTagName("ul");
+      console.log(ul);
+      console.log(ul[0].children[1]); //  <li>List item2</li>
+      console.log(ul[0].children); // children: HTMLCollection(5) [li, li, li, li, li]
+      console.log(ul[0].childNodes); // childNodes: NodeList(11) [text, li, text, li, text, li, text, li, text, li, text]  text : 빈문자열 or 엔터
+      console.log(ul[0].children[1].innerText); //  List item2
+    </script>
+  </body>
+</html>

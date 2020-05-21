@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let value1 = "Hello";
+      console.log(typeof value1);
+
+      value1 = 5;
+      console.log(typeof value1);
+
+      //   let value1 = 3.5; //var와 다르게 동일한 변수명을 선언할 수 없다.
+      //   console.log(typeof value1);   //Identifier 'value1' has already been declared
+
+      const PI = 3.141592; //상수선언
+      //   PI = 3.14;    //Assignment to constant variable
+
+      var tmp1 = null;
+      let tmp2 = null;
+      let tmp3;
+      console.log(typeof tmp1); //Object - null
+      console.log(typeof tmp2); //Object - null
+      console.log(typeof tmp3); //Undefined - 값을 부여하지 않음
+    </script>
+  </body>
+</html>

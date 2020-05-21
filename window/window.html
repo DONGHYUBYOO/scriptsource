@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    _self 현재창에 띄우기
+    _blank 새로운창에 띄우기 - 생략가능?  (치수를 적용하면 팝업창 처럼 표시)
+    -->
+    <input
+      type="button"
+      value="클릭1"
+      onclick="window.open('http://google.com','_blank','width=300, height=300,status=no,scrollbars=no')"
+    />
+    <input
+      type="button"
+      value="클릭2"
+      onclick="window.open('http://google.com')"
+    />
+    <input type="button" value="클릭3" onclick="window.open('history.html')" />
+  </body>
+</html>

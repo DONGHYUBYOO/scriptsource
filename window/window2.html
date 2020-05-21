@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="button" value="클릭1" onclick="test()" />
+    <script>
+      // document.write : 바디에 접근 할 수 있는, opener : 부모를 가리킬때
+      function test() {
+        let myWin = window.open("", "myWin", "width=200,height=100");
+        myWin.document.write("<p>This is myWindow</p>");
+        myWin.opener.document.write("<p>This is the source window!</p>");
+      }
+    </script>
+  </body>
+</html>

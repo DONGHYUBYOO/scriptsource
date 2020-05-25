@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //스크립트 문 안에서 문서요소를 생성해서 삽입
+      //img 태그
+      let img = document.createElement("img"); //<img></img>
+      // img.setAttribute(
+      //   "src",
+      //   "https://w.namu.la/s/db670b112b57be67dbe64ae0813864ffbece192d9db38dc1477bb6d8608384f7e6fa86fc33aaa4e208f942aacb81eccc791981393b5236f32b021c29274d1312696985d2dfb2b359eaf0d7ca69a596bddda7ac28059b2fbc8c316daa470e62be"
+      // );
+      // img.setAttribute("alt", "개");
+
+      img.src =
+        "https://w.namu.la/s/db670b112b57be67dbe64ae0813864ffbece192d9db38dc1477bb6d8608384f7e6fa86fc33aaa4e208f942aacb81eccc791981393b5236f32b021c29274d1312696985d2dfb2b359eaf0d7ca69a596bddda7ac28059b2fbc8c316daa470e62be";
+      img.alt = "개";
+      window.document.body.appendChild(img);
+    </script>
+  </body>
+</html>
